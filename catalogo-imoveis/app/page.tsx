@@ -5,10 +5,12 @@ import { useState } from "react";
 import BrandMark from "@/components/BrandMark";
 import { siteConfig, whatsappLink } from "@/lib/config";
 
-const photos = Array.from({ length: 44 }, (_, index) => ({
-  src: `/projects/y-construtora/obra-${String(index + 1).padStart(2, "0")}.jpeg`,
-  alt: `Obra Y. Construtora ${index + 1}`,
-}));
+import { properties } from "@/lib/properties";
+
+const photos = properties.flatMap((property) => [
+  { src: property.images.fachada, alt: `Fachada - ${property.title}` },
+  { src: property.images.sala, alt: `Sala - ${property.title}` },
+]);
 
 export default function Home() {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
