@@ -14,7 +14,9 @@ export type Property = {
   images: PropertyImages;
 };
 
-const image = (filename: string) => `/imoveis/oliveira/${filename}`;
+import { basePath } from "./config";
+
+const image = (filename: string) => `${basePath}/imoveis/oliveira/${filename}`;
 
 export const properties: Property[] = [
   {

@@ -1,3 +1,5 @@
+export const basePath = "/Y.construtora";
+
 export const siteConfig = {
   companyName: "Y. Construtora",
   contact: {

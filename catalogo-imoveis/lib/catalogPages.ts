@@ -8,8 +8,10 @@ export type CatalogPage =
   | { kind: "spread"; images: [GalleryImage, GalleryImage] }
   | { kind: "final" };
 
+import { basePath } from "./config";
+
 const photo = (filename: string, alt: string): GalleryImage => ({
-  src: `/imoveis/oliveira/${filename}`,
+  src: `${basePath}/imoveis/oliveira/${filename}`,
   alt,
 });
 

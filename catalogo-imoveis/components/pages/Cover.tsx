@@ -1,5 +1,6 @@
 import Image from "next/image";
 import BrandMark from "@/components/BrandMark";
+import { basePath } from "@/lib/config";
 
 export default function Cover() {
   return (
@@ -23,7 +24,7 @@ export default function Cover() {
 
         <div className="relative min-h-0 bg-[#f6f0e7] p-3 sm:p-5">
           <Image
-            src="/imoveis/oliveira/apresentacao-p1-1.jpg"
+            src={`${basePath}/imoveis/oliveira/apresentacao-p1-1.jpg`}
             alt="Casa construída pela Y. Construtora"
             fill
             priority
