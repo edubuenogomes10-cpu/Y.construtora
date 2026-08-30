@@ -1,4 +1,4 @@
-export const basePath = "/Y.construtora";
+export const basePath = process.env.GITHUB_PAGES === "true" ? "/Y.construtora" : "";
 
 export const siteConfig = {
   companyName: "Y. Construtora",

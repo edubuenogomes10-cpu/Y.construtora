@@ -1,9 +1,11 @@
 import path from "node:path";
 import type { NextConfig } from "next";
 
+const isGithubPages = process.env.GITHUB_PAGES === "true";
+
 const nextConfig: NextConfig = {
-  output: "export",
-  basePath: "/Y.construtora",
+  output: isGithubPages ? "export" : undefined,
+  basePath: isGithubPages ? "/Y.construtora" : undefined,
   images: {
     unoptimized: true,
   },
