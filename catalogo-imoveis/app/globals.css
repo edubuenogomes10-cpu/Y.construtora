@@ -912,7 +912,7 @@ body {
 .catalog-eyebrow {
   margin: 0 0 12px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 34px;
   font-weight: 800;
   font-style: normal;
   letter-spacing: .02em;
@@ -947,13 +947,17 @@ body {
 .catalog-intro h1 mark {
   background: transparent;
   color: inherit;
-  font-family: Arial, Helvetica, sans-serif;
+  font: inherit;
   font-weight: 850;
   letter-spacing: inherit;
-  text-decoration: underline;
-  text-decoration-color: var(--ink);
-  text-decoration-thickness: 0.09em;
-  text-underline-offset: 0.12em;
+  text-decoration: none;
+}
+
+.catalog-intro h1,
+.catalog-intro h1 span,
+.catalog-intro h1 mark,
+.catalog-intro h1 em {
+  text-decoration: none;
 }
 
 /* DO SEU JEITO — SERIFADO E ITÁLICO */
