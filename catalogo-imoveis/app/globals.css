@@ -1216,7 +1216,8 @@ body {
   }
 
   .catalog-eyebrow {
-    font-size: 13px;
+    font-size: 24px;
+    font-weight: 800;
   }
 
   .catalog-intro h1 {
