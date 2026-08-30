@@ -5,9 +5,15 @@ import { useState } from "react";
 import BrandMark from "@/components/BrandMark";
 import { siteConfig, whatsappLink } from "@/lib/config";
 
-import { allPhotos } from "@/lib/allPhotos";
+import { properties } from "@/lib/properties";
 
-const photos = allPhotos;
+const photos = properties.flatMap((property) => [
+  { src: property.images.fachada, alt: `Fachada - ${property.title}` },
+  { src: property.images.sala, alt: `Sala - ${property.title}` },
+  { src: property.images.cozinha, alt: `Cozinha - ${property.title}` },
+  { src: property.images.quarto, alt: `Quarto - ${property.title}` },
+  { src: property.images.banheiro, alt: `Banheiro - ${property.title}` },
+]);
 
 export default function Home() {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
