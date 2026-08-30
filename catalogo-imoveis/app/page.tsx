@@ -58,9 +58,8 @@ export default function Home() {
   <div>
 
   <h1>
-    <span className="especialistas">Especialistas em</span>{" "}
-    Aquisição de terreno e construção.
-  </h1>
+  Aquisição de terreno e construção
+</h1>
 </div>
 
   <div className="catalog-contact">
