@@ -59,11 +59,9 @@ export default function Home() {
     <p className="catalog-eyebrow">Y. CONSTRUTORA</p>
 
     <h1>
-      <span className="somos">Somos</span>{" "}
-      <span className="especialistas">especialistas em</span>{" "}
-      <mark>Aquisição de terreno e construção.</mark>{" "}
-      <em>Do seu jeito.</em>
-    </h1>
+  <span className="especialistas">Especialistas em</span>{" "}
+  <mark>Aquisição de terreno e construção.</mark>
+</h1>
   </div>
 
   <div className="catalog-contact">
