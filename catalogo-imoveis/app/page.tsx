@@ -56,13 +56,13 @@ export default function Home() {
 
       <section className="catalog-intro">
   <div>
-    <p className="catalog-eyebrow">Y. CONSTRUTORA</p>
+  <p className="catalog-eyebrow">Y. CONSTRUTORA</p>
 
-    <h1>
-  <span className="especialistas">Especialistas em</span>{" "}
-  <mark>Aquisição de terreno e construção.</mark>
-</h1>
-  </div>
+  <h1>
+    <span className="especialistas">Especialistas em</span>{" "}
+    Aquisição de terreno e construção.
+  </h1>
+</div>
 
   <div className="catalog-contact">
     <a

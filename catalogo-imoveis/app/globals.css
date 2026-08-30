@@ -925,8 +925,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: clamp(2.45rem, 5.15vw, 5.5rem);
   font-weight: 400;
-  letter-spacing: -0.09em;
-  line-height: 0.88;
+  letter-spacing: -.09em;
+  line-height: .88;
 }
 
 /* =========================================================
@@ -938,9 +938,9 @@ body {
 /* ESPECIALISTAS EM — NEGRITO + SUBLINHADO */
 .catalog-intro h1 .especialistas {
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 850;
+  font-weight: 400;
   font-style: normal;
-  letter-spacing: -.09em;
+  letter-spacing: inherit;
 }
 
 /* AQUISIÇÃO DE TERRENO E CONSTRUÇÃO — NEGRITO + SUBLINHADO */
@@ -948,11 +948,9 @@ body {
   background: transparent;
   color: inherit;
   font: inherit;
-  font-weight: 850;
-  letter-spacing: inherit;
+  font-weight: 400;
   text-decoration: none;
 }
-
 .catalog-intro h1,
 .catalog-intro h1 span,
 .catalog-intro h1 mark,
@@ -1216,22 +1214,24 @@ body {
   }
 
   .catalog-eyebrow {
-    font-size: 23px;
-    font-weight: 800;
-  }
+  font-size: 23px;
+  font-weight: 800;
+}
+
 
   .catalog-intro h1 {
-    max-width: 350px;
-    font-size: clamp(2.35rem, 11.5vw, 3.9rem);
-  }
+  max-width: 350px;
+  font-size: clamp(2.35rem, 11.5vw, 3.9rem);
+  font-weight: 400;
+}
 
   .catalog-intro h1 .somos {
     font-weight: 400;
   }
 
   .catalog-intro h1 .especialistas {
-    font-weight: 850;
-  }
+  font-weight: 400;
+}
 
   .catalog-intro h1 mark {
     font-weight: 850;
@@ -1315,23 +1315,24 @@ body {
   }
 
    .catalog-eyebrow {
-    font-size: 23px;
-    font-weight: 800;
-  }
+  font-size: 23px;
+  font-weight: 800;
+}
 
 
-  .catalog-intro h1 {
-    max-width: 350px;
-    font-size: clamp(2.15rem, 11vw, 3.25rem);
-  }
+ .catalog-intro h1 {
+  max-width: 350px;
+  font-size: clamp(2.35rem, 11.5vw, 3.9rem);
+  font-weight: 400;
+}
 
   .catalog-intro h1 .somos {
     font-weight: 400;
   }
 
   .catalog-intro h1 .especialistas {
-    font-weight: 850;
-  }
+  font-weight: 400;
+}
 
   .catalog-contact a {
     min-height: 37px;
