@@ -912,7 +912,7 @@ body {
 .catalog-eyebrow {
   margin: 0 0 12px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px; /* antes: 16px */
+  font-size: 20px;
   font-weight: 800;
   font-style: normal;
   letter-spacing: .02em;
@@ -933,24 +933,14 @@ body {
    TÍTULO DO CATÁLOGO
    ========================================================= */
 
-/* SOMOS — NORMAL */
-.catalog-intro h1 .somos {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: inherit;
-}
+
 
 /* ESPECIALISTAS EM — NEGRITO + SUBLINHADO */
 .catalog-intro h1 .especialistas {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 850;
   font-style: normal;
-  letter-spacing: inherit;
-  text-decoration: underline;
-  text-decoration-color: var(--ink);
-  text-decoration-thickness: 0.09em;
-  text-underline-offset: 0.10em;
+  letter-spacing: -.09em;
 }
 
 /* AQUISIÇÃO DE TERRENO E CONSTRUÇÃO — NEGRITO + SUBLINHADO */
