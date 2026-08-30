@@ -1216,7 +1216,7 @@ body {
   }
 
   .catalog-eyebrow {
-    font-size: 24px;
+    font-size: 35px;
     font-weight: 800;
   }
 
@@ -1314,9 +1314,11 @@ body {
     padding-top: 34px;
   }
 
-  .catalog-eyebrow {
-    font-size: 13px;
+   .catalog-eyebrow {
+    font-size: 35px;
+    font-weight: 800;
   }
+
 
   .catalog-intro h1 {
     max-width: 350px;
