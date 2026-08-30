@@ -79,6 +79,7 @@ body {
   gap: 11px;
   color: #080808;
   line-height: 1;
+  text-decoration: none;
 }
 
 .brand-symbol {
@@ -96,6 +97,7 @@ body {
 
 .nav-link {
   transition: opacity 0.2s;
+  text-decoration: none;
 }
 
 .nav-link:hover {
@@ -103,13 +105,13 @@ body {
 }
 
 .nav-contact {
-  border-bottom: 1px solid #111;
   padding-bottom: 4px;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   white-space: nowrap;
+  text-decoration: none;
 }
 
 .hero-grid {
@@ -133,7 +135,7 @@ body {
   margin: 18px 0 0;
   max-width: 780px;
   font-size: clamp(3.25rem, 8.1vw, 8.25rem);
-  font-weight: 800;
+  font-weight: 400;
   letter-spacing: -0.085em;
   line-height: 0.88;
 }
@@ -166,6 +168,7 @@ body {
   transition:
     transform 0.2s,
     background 0.2s;
+  text-decoration: none;
 }
 
 .button:hover {
@@ -247,13 +250,13 @@ body {
   display: inline-flex;
   gap: 22px;
   margin-top: 12px;
-  border-bottom: 1px solid var(--ink);
   padding-bottom: 7px;
   color: var(--ink);
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .service-grid {
@@ -590,7 +593,6 @@ body {
   display: flex;
   align-items: baseline;
   gap: 16px;
-  border-bottom: 1px solid rgba(16, 16, 15, 0.5);
   padding-bottom: 16px;
   font-size: clamp(1.75rem, 3.5vw, 4rem);
   font-weight: 800;
@@ -643,7 +645,7 @@ body {
 .works-heading h2 {
   margin: 16px 0 0;
   font-size: clamp(3rem, 6.2vw, 6.8rem);
-  font-weight: 800;
+  font-weight: 400;
   letter-spacing: -0.085em;
   line-height: 0.87;
 }
@@ -869,20 +871,49 @@ body {
   letter-spacing: -0.24em;
 }
 
+/* =========================================================
+   CABEÇALHO DO CATÁLOGO
+   ========================================================= */
+
 .catalog-header {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   gap: 20px;
 }
 
+/*
+   O LOGO QUE JÁ EXISTE NO CABEÇALHO
+   agora será usado no lugar do Y. CONSTRUTORA
+   que estava aparecendo acima do título.
+*/
+
+.catalog-header .brand-mark {
+  position: absolute;
+  z-index: 5;
+  top: 105px;
+  left: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  text-decoration: none;
+}
+
 .catalog-header .brand-symbol {
-  width: 48px;
-  height: 48px;
+  width: 45px;
+  height: 45px;
 }
 
 .catalog-header .brand-name {
-  font-size: 18px;
+  font-size: 17px;
+  font-weight: 800;
+  font-style: italic;
+}
+
+/* Esconde o Y. CONSTRUTORA antigo que estava em vermelho */
+.catalog-eyebrow {
+  display: none !important;
 }
 
 .catalog-label {
@@ -893,30 +924,27 @@ body {
 
 .catalog-header-link {
   justify-self: end;
-  border-bottom: 1px solid var(--ink);
   padding: 0 0 6px;
   font-size: 11px;
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 0;
 }
+
+/* =========================================================
+   INTRO DO CATÁLOGO
+   ========================================================= */
 
 .catalog-intro {
   display: flex;
   align-items: end;
   justify-content: space-between;
   gap: 45px;
-  padding: clamp(42px, 7vh, 80px) 0 clamp(20px, 3.5vh, 40px);
-}
 
-.catalog-eyebrow {
-  margin: 0 0 12px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 34px;
-  font-weight: 800;
-  font-style: normal;
-  letter-spacing: .02em;
-  line-height: 1;
+  /* espaço para o logo */
+  padding: 145px 0 clamp(20px, 3.5vh, 40px);
 }
 
 .catalog-intro h1 {
@@ -924,18 +952,25 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: clamp(2.45rem, 5.15vw, 5.5rem);
+
+  /* texto normal */
   font-weight: 400;
-  letter-spacing: -.09em;
-  line-height: .88;
+
+  letter-spacing: -0.09em;
+  line-height: 0.88;
+  text-decoration: none;
 }
 
-/* =========================================================
-   TÍTULO DO CATÁLOGO
-   ========================================================= */
+/* Nada de negrito nos elementos do título */
+.catalog-intro h1,
+.catalog-intro h1 span,
+.catalog-intro h1 mark,
+.catalog-intro h1 em {
+  font-weight: 400;
+  text-decoration: none;
+}
 
-
-
-/* ESPECIALISTAS EM — NEGRITO + SUBLINHADO */
+/* Especialistas */
 .catalog-intro h1 .especialistas {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
@@ -943,7 +978,7 @@ body {
   letter-spacing: inherit;
 }
 
-/* AQUISIÇÃO DE TERRENO E CONSTRUÇÃO — NEGRITO + SUBLINHADO */
+/* Aquisição de terreno e construção */
 .catalog-intro h1 mark {
   background: transparent;
   color: inherit;
@@ -951,19 +986,15 @@ body {
   font-weight: 400;
   text-decoration: none;
 }
-.catalog-intro h1,
-.catalog-intro h1 span,
-.catalog-intro h1 mark,
-.catalog-intro h1 em {
-  text-decoration: none;
+
+/* Caso ainda exista "Somos", esconde */
+.catalog-intro h1 .somos {
+  display: none;
 }
 
-/* DO SEU JEITO — SERIFADO E ITÁLICO */
+/* Caso ainda exista "Do seu jeito", esconde */
 .catalog-intro h1 em {
-  font-family: Georgia, "Times New Roman", serif;
-  font-weight: 400;
-  font-style: italic;
-  letter-spacing: inherit;
+  display: none;
 }
 
 /* =========================================================
@@ -982,8 +1013,12 @@ body {
   align-items: baseline;
   justify-content: space-between;
   gap: 18px;
-  border-bottom: 1px solid rgba(16, 16, 15, 0.4);
   padding-bottom: 8px;
+
+  /* remove sublinhado */
+  border-bottom: 0;
+  text-decoration: none;
+  color: inherit;
 }
 
 .catalog-contact small {
@@ -1061,7 +1096,6 @@ body {
 
 /* =========================================================
    CAIXAS DE TEXTO
-   MESMO TAMANHO DAS FOTOS
    ========================================================= */
 
 .catalog-step-card {
@@ -1069,14 +1103,11 @@ body {
   width: clamp(265px, 20vw, 350px) !important;
   height: clamp(180px, 14vw, 235px) !important;
   flex: 0 0 clamp(265px, 20vw, 350px) !important;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 8px;
-
   padding: 35px;
-
   background: var(--ink);
   color: var(--yellow);
   border: 2px solid var(--yellow);
@@ -1189,6 +1220,7 @@ body {
    ========================================================= */
 
 @media (max-width: 720px) {
+
   .catalog-one-page {
     min-height: 100svh;
     padding-top: 18px;
@@ -1202,39 +1234,49 @@ body {
     display: none;
   }
 
+  /*
+     O LOGO CONTINUA SENDO O MESMO DO PC,
+     MAS AGORA FICA NO LUGAR DO TEXTO Y. CONSTRUTORA
+  */
+
+  .catalog-header .brand-mark {
+    top: 88px;
+    left: 0;
+  }
+
+  .catalog-header .brand-symbol {
+    width: 45px;
+    height: 45px;
+  }
+
   .catalog-header .brand-name {
-    display: none;
+    display: block;
+    font-size: 17px;
   }
 
   .catalog-intro {
     align-items: start;
     flex-direction: column;
     gap: 25px;
-    padding: 45px 0 26px;
+
+    /* espaço para o logo */
+    padding: 125px 0 26px;
   }
 
-  .catalog-eyebrow {
-  font-size: 23px;
-  font-weight: 800;
-}
-
-
   .catalog-intro h1 {
-  max-width: 350px;
-  font-size: clamp(2.35rem, 11.5vw, 3.9rem);
-  font-weight: 400;
-}
-
-  .catalog-intro h1 .somos {
+    max-width: 350px;
+    font-size: clamp(2.35rem, 11.5vw, 3.9rem);
     font-weight: 400;
   }
 
-  .catalog-intro h1 .especialistas {
-  font-weight: 400;
-}
+  .catalog-intro h1 .somos,
+  .catalog-intro h1 em {
+    display: none;
+  }
 
+  .catalog-intro h1 .especialistas,
   .catalog-intro h1 mark {
-    font-weight: 850;
+    font-weight: 400;
   }
 
   .catalog-contact {
@@ -1250,14 +1292,12 @@ body {
     line-height: 1.45;
   }
 
-  /* FOTO */
   .catalog-marquee button {
     width: 215px;
     height: 155px;
     flex: 0 0 215px;
   }
 
-  /* CAIXA = MESMO TAMANHO DA FOTO */
   .catalog-step-card {
     width: 215px !important;
     height: 155px !important;
@@ -1296,9 +1336,15 @@ body {
    ========================================================= */
 
 @media (max-width: 480px) {
+
   .catalog-one-page {
     padding-right: 18px;
     padding-left: 18px;
+  }
+
+  .catalog-header .brand-mark {
+    top: 82px;
+    left: 0;
   }
 
   .catalog-header .brand-symbol {
@@ -1306,36 +1352,39 @@ body {
     height: 42px;
   }
 
+  .catalog-header .brand-name {
+    display: block;
+    font-size: 16px;
+  }
+
   .catalog-header-link {
     font-size: 10px;
+    border-bottom: 0;
   }
 
   .catalog-intro {
-    padding-top: 34px;
+    padding-top: 118px;
   }
 
-   .catalog-eyebrow {
-  font-size: 23px;
-  font-weight: 800;
-}
-
-
- .catalog-intro h1 {
-  max-width: 350px;
-  font-size: clamp(2.35rem, 11.5vw, 3.9rem);
-  font-weight: 400;
-}
-
-  .catalog-intro h1 .somos {
+  .catalog-intro h1 {
+    max-width: 350px;
+    font-size: clamp(2.35rem, 11.5vw, 3.9rem);
     font-weight: 400;
   }
 
-  .catalog-intro h1 .especialistas {
-  font-weight: 400;
-}
+  .catalog-intro h1 .somos,
+  .catalog-intro h1 em {
+    display: none;
+  }
+
+  .catalog-intro h1 .especialistas,
+  .catalog-intro h1 mark {
+    font-weight: 400;
+  }
 
   .catalog-contact a {
     min-height: 37px;
+    border-bottom: 0;
   }
 
   .catalog-gallery > p {
@@ -1343,7 +1392,6 @@ body {
     font-size: 8px;
   }
 
-  /* FOTO */
   .catalog-marquee button {
     width: 205px;
     height: 150px;
@@ -1352,7 +1400,6 @@ body {
     -webkit-tap-highlight-color: transparent;
   }
 
-  /* CAIXA EXATAMENTE IGUAL À FOTO */
   .catalog-step-card {
     width: 205px !important;
     height: 150px !important;

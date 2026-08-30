@@ -56,7 +56,6 @@ export default function Home() {
 
       <section className="catalog-intro">
   <div>
-  <p className="catalog-eyebrow">Y. CONSTRUTORA</p>
 
   <h1>
     <span className="especialistas">Especialistas em</span>{" "}
