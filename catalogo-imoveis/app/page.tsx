@@ -58,7 +58,7 @@ export default function Home() {
   <div>
 
   <h1>
-  Aquisição de terreno e construção
+  Aquisição de terreno e construção.
 </h1>
 </div>
 
