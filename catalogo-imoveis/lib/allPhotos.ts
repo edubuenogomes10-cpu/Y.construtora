@@ -49,15 +49,12 @@ const filenames = [
   "documento-p13-2.jpg",
   "documento-p13-3.jpg",
 
-  // Casas com preço por m²
+  // Casas com preço por m² (fachada + endereço, sem o icone de coracao)
   "oliveira-p2-1.jpg",
-  "oliveira-p2-2.jpg",
   "oliveira-p2-3.jpg",
   "oliveira-p3-1.jpg",
-  "oliveira-p3-2.jpg",
   "oliveira-p3-3.jpg",
   "oliveira-p4-1.jpg",
-  "oliveira-p4-2.jpg",
   "oliveira-p4-3.jpg",
 ];
 
