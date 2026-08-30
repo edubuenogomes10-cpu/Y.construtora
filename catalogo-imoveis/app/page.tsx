@@ -5,12 +5,9 @@ import { useState } from "react";
 import BrandMark from "@/components/BrandMark";
 import { siteConfig, whatsappLink } from "@/lib/config";
 
-import { properties } from "@/lib/properties";
+import { allPhotos } from "@/lib/allPhotos";
 
-const photos = properties.flatMap((property) => [
-  { src: property.images.fachada, alt: `Fachada - ${property.title}` },
-  { src: property.images.sala, alt: `Sala - ${property.title}` },
-]);
+const photos = allPhotos;
 
 export default function Home() {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
