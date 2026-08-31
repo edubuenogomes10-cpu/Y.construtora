@@ -51,11 +51,42 @@ const filenames = [
 
   // Casas com preço por m² (fachada + endereço, sem o icone de coracao)
   "oliveira-p2-1.jpg",
-  "oliveira-p2-3.jpg",
+  
   "oliveira-p3-1.jpg",
-  "oliveira-p3-3.jpg",
+  
   "oliveira-p4-1.jpg",
   "oliveira-p4-3.jpg",
+
+
+"novas-p01.jpg",
+  "novas-p02.jpg",
+  "novas-p03.jpg",
+  "novas-p04.jpg",
+  "novas-p05.jpg",
+  "novas-p06.jpg",
+  "novas-p07.jpg",
+  "novas-p08.jpg",
+  "novas-p09.jpg",
+  "novas-p10.jpg",
+  "novas-p11.jpg",
+  "novas-p12.jpg",
+  "novas-p13.jpg",
+  "novas-p14.jpg",
+  "novas-p15.jpg",
+  "novas-p16.jpg",
+  "novas-p17.jpg",
+  "novas-p18.jpg",
+  "novas-p19.jpg",
+  "novas-p20.jpg",
+  "novas-p21.jpg",
+  "novas-p22.jpg",
+  "novas-p23.jpg",
+  "novas-p24.jpg",
+  "novas-p25.jpg",
+  "novas-p26.jpg",
+  "novas-p27.jpg",
+  "novas-p28.jpg",
+
 ];
 
 export const allPhotos = filenames.map((filename, index) => ({
