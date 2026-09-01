@@ -1,7 +1,7 @@
 import { basePath } from "./config";
 
 const filenames = [
-  // Renders das casas (Casa 01 a Casa 08)
+  // Renders das casas (Casa 01 a Casa 08) — manter
   "apresentacao-p1-1.jpg",
   "apresentacao-p3-1.jpg",
   "apresentacao-p5-1.jpg",
@@ -11,82 +11,33 @@ const filenames = [
   "apresentacao-p13-1.jpg",
   "apresentacao-p15-1.jpg",
 
-  // Casas entregues - portfólio real
-  "documento-p2-1.jpg",
-  "documento-p2-2.jpg",
-  "documento-p2-3.jpg",
-  "documento-p3-1.jpg",
+  // Casas entregues - portfólio real (revisão: fotos de banheiro,
+  // suja e repetidas retiradas)
   "documento-p3-2.jpg",
   "documento-p3-3.jpg",
-  "documento-p3-4.jpg",
-  "documento-p3-5.jpg",
+  "documento-p3-4.jpg", // MELHORAR: aproximar o enquadramento
+  "documento-p3-5.jpg", // MELHORAR: aproximar o enquadramento
   "documento-p4-1.jpg",
-  "documento-p4-2.jpg",
-  "documento-p5-1.jpg",
-  "documento-p5-2.jpg",
+  "documento-p4-2.jpg", // MELHORAR: aproximar o enquadramento
+  "documento-p5-1.jpg", // MELHORAR: aproximar, evitar sujeira/objetos na frente
   "documento-p6-1.jpg",
-  "documento-p6-2.jpg",
-  "documento-p6-3.jpg",
-  "documento-p7-1.jpg",
-  "documento-p7-2.jpg",
-  "documento-p7-3.jpg",
+  "documento-p6-3.jpg", // MELHORAR: aproximar o enquadramento
   "documento-p8-1.jpg",
-  "documento-p8-2.jpg",
   "documento-p8-3.jpg",
-  "documento-p9-1.jpg",
   "documento-p9-2.jpg",
-  "documento-p9-3.jpg",
   "documento-p10-1.jpg",
-  "documento-p10-2.jpg",
-  "documento-p10-3.jpg",
-  "documento-p11-1.jpg",
-  "documento-p11-2.jpg",
-  "documento-p11-3.jpg",
-  "documento-p11-4.jpg",
-  "documento-p12-1.jpg",
-  "documento-p12-2.jpg",
-  "documento-p13-1.jpg",
   "documento-p13-2.jpg",
-  "documento-p13-3.jpg",
 
-  // Casas com preço por m² (fachada + endereço, sem o icone de coracao)
-  "oliveira-p2-1.jpg",
-  
-  "oliveira-p3-1.jpg",
-  
-  "oliveira-p4-1.jpg",
-  "oliveira-p4-3.jpg",
-
-
-"novas-p01.jpg",
-  "novas-p02.jpg",
+  // Novas fotos - pendente de avaliação (sem observação específica no PDF)
   "novas-p03.jpg",
   "novas-p04.jpg",
   "novas-p05.jpg",
   "novas-p06.jpg",
   "novas-p07.jpg",
-  "novas-p08.jpg",
-  "novas-p09.jpg",
-  "novas-p10.jpg",
-  "novas-p11.jpg",
-  "novas-p12.jpg",
-  "novas-p13.jpg",
-  "novas-p14.jpg",
-  "novas-p15.jpg",
-  "novas-p16.jpg",
-  "novas-p17.jpg",
-  "novas-p18.jpg",
-  "novas-p19.jpg",
-  "novas-p20.jpg",
-  "novas-p21.jpg",
-  "novas-p22.jpg",
-  "novas-p23.jpg",
-  "novas-p24.jpg",
   "novas-p25.jpg",
   "novas-p26.jpg",
   "novas-p27.jpg",
   "novas-p28.jpg",
-
 ];
 
 export const allPhotos = filenames.map((filename, index) => ({
